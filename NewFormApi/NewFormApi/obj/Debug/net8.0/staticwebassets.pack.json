@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\New form\\NewFormApi\\NewFormApi\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\New form\\NewFormApi\\NewFormApi\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NewFormApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.NewFormApi.props",
+      "PackagePath": "build\\NewFormApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.NewFormApi.props",
+      "PackagePath": "buildMultiTargeting\\NewFormApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.NewFormApi.props",
+      "PackagePath": "buildTransitive\\NewFormApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

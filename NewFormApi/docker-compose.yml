@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  newformapi:
+    image: ${DOCKER_REGISTRY-}newformapi
+    build:
+      context: .
+      dockerfile: NewFormApi\Dockerfile

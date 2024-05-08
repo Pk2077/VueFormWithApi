@@ -1,0 +1,1400 @@
+﻿/* written by narendhar reddy */
+
+.FSemiBold {
+    font-family: 'OpenSans-Semibold' !important;
+}
+
+.FBold {
+    font-family: 'OpenSans-Bold' !important;
+}
+
+.FItalic {
+    font-family: 'OpenSans-Italic' !important;
+}
+
+.FBoldItalic {
+    font-family: 'OpenSans-BoldItalic' !important;
+}
+
+.FSemiBoldItalic {
+    font-family: 'OpenSans-SemiboldItalic' !important;
+}
+
+@font-face {
+    font-family: 'OpenSans-Italic';
+    src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url('../fonts/OpenSans-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiboldItalic';
+    src: url('../fonts/OpenSans-SemiboldItalic.ttf') format('truetype');
+}
+
+.Flabel {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+.Ftxtbox, .Ftxtbox-lg, .Fselect, .Fselect-lg, .Ftxtbox-M, .Fselect-M, .Fselect-lg-M, .Ftxtbox-lg-M {
+    display: block;
+    width: 100%;
+    line-height: 1.42857143;
+    color: #414141;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #c6c6c6;
+    border-radius: 1px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+    .Ftxtbox:focus,
+    .Ftxtbox-lg:focus,
+    .Ftxtarea:focus,
+    .Ftxtarea-M:focus,
+    .Fselect:focus,
+    .Fselect-lg:focus,
+    .Ftxtbox-M:focus,
+    .Fselect-M:focus,
+    .Fselect-lg-M:focus,
+    .Ftxtbox-lg-M:focus,
+    .Fchkbox:focus,
+    .Fchkbox-lg:focus,
+    .Fradio:focus,
+    .Fradio-lg:focus {
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+
+.ltr .Ftxtbox-M, .ltr .Fselect-M, .ltr .Ftxtarea-M, .ltr .Fselect-lg-M, .ltr .Ftxtbox-lg-M {
+    border-left-color: rgba(252, 70, 70, 0.63) !important;
+    border-left-width: 2px;
+}
+
+.rtl .Ftxtbox-M, .rtl .Fselect-M, .rtl .Ftxtarea-M, .rtl .Fselect-lg-M, .rtl .Ftxtbox-lg-M {
+    border-right-color: rgba(252, 70, 70, 0.63) !important;
+    border-left-width: 2px;
+}
+
+.Ftxtarea, .Ftxtarea-M {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    line-height: 1.42857143;
+    color: #414141;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #c6c6c6;
+    border-radius: 1px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    resize: none;
+}
+
+.Fchkbox, .Fchkbox-lg {
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    -moz-appearance: checkbox;
+}
+
+.rtl .Fchkbox, .rtl .Fchkbox-lg {
+    transform: rotate(0deg) scaleX(-1) !important;
+}
+
+.Fchkbox {
+    width: 16px;
+    height: 16px;
+}
+
+.Fchkbox-lg {
+    width: 18px;
+    height: 18px;
+}
+
+.Fcheckbox {
+    position: relative;
+    display: block;
+    margin-top: 3px;
+    /*margin-bottom: 10px;*/
+}
+
+    .Fcheckbox label {
+        cursor: pointer;
+        font-weight: 400;
+    }
+
+.Fradiobox {
+    position: relative;
+    display: block;
+    margin-top: 3px;
+    /*margin-bottom: 10px;*/
+}
+
+    .Fradiobox label {
+        cursor: pointer;
+        font-weight: 400;
+    }
+
+.Fradio, .Fradio-lg {
+    position: absolute;
+    display: block;
+    /*margin-top: 10px;*/
+    -moz-appearance: radio;
+}
+
+.Fradio {
+    height: 16px;
+    width: 16px;
+}
+
+.Fradio-lg {
+    height: 18px;
+    width: 18px;
+}
+
+.Fbutton, .Fbutton-fixed {
+    border: solid 1px #DBDBDB;
+    border-radius: 1px !important;
+    background-color: white;
+    /*color: #969696 !important;*/
+    text-transform: none !important;
+    /*font-size: 12px !important;*/
+    outline: none !important;
+}
+
+.Fbutton {
+    height: 26px;
+}
+
+.Fbutton-fixed {
+    width: 70px;
+}
+
+    .Fbutton-fixed:hover, .Fbutton-fixed:active, .Fbutton:hover, .Fbutton:hover:active, .Fbutton:focus, Fbutton-fixed:focus {
+        color: white !important;
+        border: solid 1px transparent;
+        outline: none !important;
+        border-radius: 1px !important;
+    }
+
+    .Ftxtbox:disabled,
+    .Ftxtbox-lg:disabled,
+    .Ftxtbox-lg-M:disabled,
+    .Ftxtbox-M:disabled,
+    .Fselect:disabled,
+    .Fselect-lg:disabled,
+    .Fselect-lg-M:disabled,
+    .Fselect-M:disabled,
+    .Fcheckbox:disabled,
+    .Fradiobox:disabled,
+    .Fbutton:disabled,
+    .Fbutton-fixed:disabled {
+        background-color: #f7f7f7;
+        cursor: not-allowed;
+    }
+
+.Ftable {
+    width: 100%;
+}
+
+    .Ftable tbody {
+        overflow: auto !important;
+    }
+
+    .Ftable thead {
+        background-color: #4689cf !important;
+        color: white !important;
+    }
+
+        .Ftable thead td, .Ftable thead th {
+            height: 30px;
+            border: solid 1px white;
+            text-align: center;
+        }
+
+    .Ftable tbody td {
+        padding: 3px 2px;
+    }
+
+    .Ftable tbody tr:nth-child(even) {
+        background-color: #F9FAFC;
+    }
+
+    .Ftable tbody tr:hover {
+        background-color: #EDF9FD !important;
+        cursor: pointer;
+    }
+
+    .Ftable td {
+        white-space: unset;
+        font-family: inherit !important;
+        border: solid 1px lightgray;
+        /*font-size: 12px;*/
+    }
+
+    .Ftable th a {
+        color: white;
+        font-weight: 500;
+    }
+
+
+
+.Fpanel-heading {
+    padding: 5px 0px;
+    /*border-bottom: 1px solid #ddd;*/
+    background-color: #ffffff;
+}
+
+    .Fpanel-heading .navbar {
+        margin-bottom: -10px;
+        background-color: transparent;
+        border: none;
+    }
+
+        .Fpanel-heading .navbar .navbar-toggle {
+            margin-top: 5px;
+            margin-right: 7px;
+            padding: 5px;
+            background-color: #4C4C4C;
+        }
+
+        .Fpanel-heading .navbar .nav {
+            padding-top: 2px;
+        }
+
+        .Fpanel-heading .navbar .navbar-collapse {
+            border: 0;
+        }
+
+        .Fpanel-heading .navbar .navbar-brand {
+            padding: 2px 0px;
+            margin-bottom: -15px;
+            font-size: inherit;
+            text-align: left;
+        }
+
+.Fpanel-footer {
+    background-color: #ffffff !important;
+    padding: 10px 15px;
+    /*border-top: 1px solid #ddd;*/
+}
+
+/*.Fheader-navbar {
+    margin-bottom: 0px !important;
+    border: none !important;
+    background-color: #ffffff !important;
+}*/
+/*.Fheader-navbar .container-fluid {
+    padding: 0px !important;
+}
+
+    .Fheader-navbar .container-fluid .navbar-header {
+        margin: 0;
+    }
+
+        .Fheader-navbar .container-fluid .navbar-header .navbar-brand {
+            height: auto !important;
+            margin-left: 0px !important;
+            padding: 8px 0px 0px 0px !important;
+            font-size: inherit;
+        }
+
+    .Fheader-navbar .container-fluid .navbar-collapse {
+        border: 0px;
+        margin: 3px 0px;
+    }
+
+        .Fheader-navbar .container-fluid .navbar-collapse .nav {
+            margin-top: 8px !important;
+            margin: 0px;
+        }
+
+    .Fheader-navbar .container-fluid .navbar-header .navbar-toggle {
+        margin-top: 5px;
+        margin-right: 7px;
+        padding: 5px;
+        background-color: #4C4C4C;
+    }*/
+/*.tdunset{
+    white-space:nowrap !important;
+    color:red;
+}*/
+/*.font-1,.font-2,.font-3,.font-4,.font-5,.font-6{
+    font-family: 'OpenSans-Regular';
+}*/
+.icon-font1, .icon-font2, .icon-font3, .icon-font4, .icon-font5, .icon-font6, .icon-font7, .icon-font8 {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    /*font-family: 'untitled-font-6';*/
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+@media(max-width : 480px) {
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 22px;
+        /*font-size: 10px;*/
+        padding: 3px 5px;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 24px;
+        /*font-size: 12px;*/
+        padding: 5px 10px;
+    }
+
+    .ms-choice {
+        height: 21px !important;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 24px;
+        padding: 0px 7px;
+    }
+
+    .Fbutton-fixed {
+        width: 60px;
+    }
+
+    h1, .font-1, .h1 {
+        font-size: 15px;
+    }
+
+    h2, .font-2, .h2 {
+        font-size: 14px;
+    }
+
+    h3, .font-3, .h3 {
+        font-size: 13px;
+    }
+
+    h4, .font-4, .h4 {
+        font-size: 12px;
+    }
+
+    h5, .font-5, .h5 {
+        font-size: 10px !important;
+    }
+
+
+    .font-6 {
+        font-size: 9px;
+    }
+
+    .font-7 {
+        font-size: 8px;
+    }
+
+    .icon-font1 {
+        font-size: 16px;
+    }
+
+    .icon-font2 {
+        font-size: 22px;
+    }
+
+    .icon-font3 {
+        font-size: 20px;
+    }
+
+    .icon-font4 {
+        font-size: 18px;
+    }
+
+    .icon-font5 {
+        font-size: 14px;
+    }
+
+    .icon-font6 {
+        font-size: 12px;
+    }
+
+    .icon-font7 {
+        font-size: 8px;
+    }
+
+    .icon-font8 {
+        font-size: 6px;
+    }
+}
+
+@media (min-width : 480px) and (max-width : 640px) {
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 22px;
+        /*font-size: 11px;*/
+        padding: 2px 6px;
+    }
+
+    .ms-choice {
+        height: 21px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 30px;
+        /*font-size: 12px;*/
+        padding: 5px 10px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 24px;
+        padding: 0px 7px;
+    }
+
+    .Fbutton-fixed {
+        width: 60px;
+    }
+
+    h1, .font-1 {
+        font-size: 17px;
+    }
+
+    h2, .font-2 {
+        font-size: 15px;
+    }
+
+    h3, .font-3 {
+        font-size: 14px;
+    }
+
+    h4, .font-4 {
+        font-size: 13px;
+    }
+
+    h5, .font-5 {
+        font-size: 11px;
+    }
+
+    .font-6 {
+        font-size: 10px;
+    }
+
+    .font-7 {
+        font-size: 8px;
+    }
+
+    .icon-font1 {
+        font-size: 25px;
+    }
+
+    .icon-font2 {
+        font-size: 23px;
+    }
+
+    .icon-font3 {
+        font-size: 21px;
+    }
+
+    .icon-font4 {
+        font-size: 18px;
+    }
+
+    .icon-font5 {
+        font-size: 15px;
+    }
+
+    .icon-font6 {
+        font-size: 13px;
+    }
+
+    .icon-font7 {
+        font-size: 8px;
+    }
+
+    .icon-font8 {
+        font-size: 6px;
+    }
+}
+
+@media (min-width : 640px) and (max-width : 768px) {
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 22px;
+        /*font-size: 11px;*/
+        padding: 3px 6px;
+    }
+
+    .ms-choice {
+        height: 21px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 30px;
+        /*font-size: 13px;*/
+        padding: 6px 11px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 24px;
+        padding: 0px 10px;
+    }
+
+    .Fbutton-fixed {
+        width: 65px;
+    }
+
+    h1, .font-1 {
+        font-size: 18px;
+    }
+
+    h2, .font-2 {
+        font-size: 15px;
+    }
+
+    h3, .font-3 {
+        font-size: 14px;
+    }
+
+    h4, .font-4 {
+        font-size: 13px;
+    }
+
+    .font-5 {
+        font-size: 11px;
+    }
+
+    .font-6 {
+        font-size: 10px;
+    }
+
+    .font-7 {
+        font-size: 8px;
+    }
+
+    .icon-font1 {
+        font-size: 28px;
+    }
+
+    .icon-font2 {
+        font-size: 24px;
+    }
+
+    .icon-font3 {
+        font-size: 22px;
+    }
+
+    .icon-font4 {
+        font-size: 20px;
+    }
+
+    .icon-font5 {
+        font-size: 16px;
+    }
+
+    .icon-font6 {
+        font-size: 14px;
+    }
+
+    .icon-font7 {
+        font-size: 9px;
+    }
+
+    .icon-font8 {
+        font-size: 7px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1024px) {
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 22px;
+        /*font-size: 11px;*/
+        padding: 3px 6px;
+    }
+
+    .ms-choice {
+        height: 21px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 32px;
+        /*font-size: 13px;*/
+        padding: 6px 12px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 24px;
+        padding: 0px 10px;
+    }
+
+    .Fbutton-fixed {
+        width: 65px;
+    }
+
+    h1, .font-1 {
+        font-size: 18px;
+    }
+
+    h2, .font-2 {
+        font-size: 16px;
+    }
+
+    h3, .font-3 {
+        font-size: 14px;
+    }
+
+    h4, .font-4 {
+        font-size: 12px;
+    }
+
+    h5, .font-5 {
+        font-size: 11px;
+    }
+
+    .font-6 {
+        font-size: 10px;
+    }
+
+    .font-7 {
+        font-size: 8px;
+    }
+
+    .icon-font1 {
+        font-size: 30px;
+    }
+
+    .icon-font2 {
+        font-size: 26px;
+    }
+
+    .icon-font3 {
+        font-size: 24px;
+    }
+
+    .icon-font4 {
+        font-size: 22px;
+    }
+
+    .icon-font5 {
+        font-size: 18px;
+    }
+
+    .icon-font6 {
+        font-size: 16px;
+    }
+
+    .icon-font7 {
+        font-size: 10px;
+    }
+
+    .icon-font8 {
+        font-size: 8px;
+    }
+}
+
+@media (min-width : 1024px) and (max-width : 1136px) {
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 26px;
+        /*font-size: 12px;*/
+        padding: 3px 7px;
+    }
+
+    .ms-choice {
+        height: 24px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 34px;
+        /*font-size: 14px;*/
+        padding: 6px 12px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 27px;
+        padding: 0px 10px;
+    }
+
+    .Fbutton-fixed {
+        width: 70px;
+    }
+
+    h1, .font-1 {
+        font-size: 20px;
+    }
+
+    h2, .font-2 {
+        font-size: 18px;
+    }
+
+    h3, .font-3 {
+        font-size: 16px;
+    }
+
+    h4, .font-4 {
+        font-size: 14px;
+    }
+
+    h5, .font-5 {
+        font-size: 13px;
+    }
+
+    .font-6 {
+        font-size: 11px;
+    }
+
+    .font-7 {
+        font-size: 9px;
+    }
+
+    .icon-font1 {
+        font-size: 34px;
+    }
+
+    .icon-font2 {
+        font-size: 30px;
+    }
+
+    .icon-font3 {
+        font-size: 26px;
+    }
+
+    .icon-font4 {
+        font-size: 22px;
+    }
+
+    .icon-font5 {
+        font-size: 18px;
+    }
+
+    .icon-font6 {
+        font-size: 16px;
+    }
+
+    .icon-font7 {
+        font-size: 12px;
+    }
+
+    .icon-font8 {
+        font-size: 10px;
+    }
+}
+
+@media (min-width : 1136px) and (max-width : 1280px) {
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 26px;
+        /*font-size: 12px;*/
+        padding: 3px 7px;
+    }
+
+    .ms-choice {
+        height: 24px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 34px;
+        /*font-size: 14px;*/
+        padding: 6px 12px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 27px;
+        padding: 0px 10px;
+    }
+
+    .Fbutton-fixed {
+        width: 70px;
+    }
+
+    h1, .font-1 {
+        font-size: 20px;
+    }
+
+    h2, .font-2 {
+        font-size: 18px;
+    }
+
+    h3, .font-3 {
+        font-size: 16px;
+    }
+
+    h4, .font-4 {
+        font-size: 14px;
+    }
+
+    h5, .font-5 {
+        font-size: 13px;
+    }
+
+    .font-6 {
+        font-size: 11px;
+    }
+
+    .font-7 {
+        font-size: 9px;
+    }
+
+    .icon-font1 {
+        font-size: 36px;
+    }
+
+    .icon-font2 {
+        font-size: 32px;
+    }
+
+    .icon-font3 {
+        font-size: 28px;
+    }
+
+    .icon-font4 {
+        font-size: 24px;
+    }
+
+    .icon-font5 {
+        font-size: 20px;
+    }
+
+    .icon-font6 {
+        font-size: 18px;
+    }
+
+    .icon-font7 {
+        font-size: 14px;
+    }
+
+    .icon-font8 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width : 1280px) and (max-width : 1366px) {
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 26px;
+        /*font-size: 12px;*/
+        padding: 3px 7px;
+    }
+
+    .ms-choice {
+        height: 24px !important;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 26px;
+        padding: 0px 10px;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 34px;
+        /*font-size: 14px;*/
+        padding: 6px 12px;
+    }
+
+    .Fbutton-fixed {
+        width: 70px;
+    }
+
+    h1, .font-1 {
+        font-size: 24px;
+    }
+
+    h2, .font-2 {
+        font-size: 20px;
+    }
+
+    h3, .font-3 {
+        font-size: 18px;
+    }
+
+    h4, .font-4 {
+        font-size: 15px;
+    }
+
+    h5, .font-5 {
+        font-size: 13px;
+    }
+
+    .font-6 {
+        font-size: 11px;
+    }
+
+    .font-7 {
+        font-size: 9px;
+    }
+
+    .icon-font1 {
+        font-size: 36px;
+    }
+
+    .icon-font2 {
+        font-size: 32px;
+    }
+
+    .icon-font3 {
+        font-size: 28px;
+    }
+
+    .icon-font4 {
+        font-size: 24px;
+    }
+
+    .icon-font5 {
+        font-size: 20px;
+    }
+
+    .icon-font6 {
+        font-size: 18px;
+    }
+
+    .icon-font7 {
+        font-size: 14px;
+    }
+
+    .icon-font8 {
+        font-size: 12px;
+    }
+}
+
+@media (min-width : 1366px) and (max-width : 1440px) {
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 28px;
+        /*font-size: 13px;*/
+        padding: 3px 7px;
+    }
+
+    .ms-choice {
+        height: 28px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 34px;
+        /*font-size: 15px;*/
+        padding: 6px 12px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 28px;
+        padding: 0px 10px;
+    }
+
+    .Fbutton-fixed {
+        width: 75px;
+    }
+
+    h1, .font-1 {
+        font-size: 24px;
+    }
+
+    h2, .font-2 {
+        font-size: 22px;
+    }
+
+    h3, .font-3 {
+        font-size: 18px;
+    }
+
+    h4, .font-4 {
+        font-size: 15px;
+    }
+
+    h5, .font-5 {
+        font-size: 13px;
+    }
+
+    .font-6 {
+        font-size: 11px;
+    }
+
+    .font-7 {
+        font-size: 10px;
+    }
+
+    .icon-font1 {
+        font-size: 36px;
+    }
+
+    .icon-font2 {
+        font-size: 34px;
+    }
+
+    .icon-font3 {
+        font-size: 30px;
+    }
+
+    .icon-font4 {
+        font-size: 26px;
+    }
+
+    .icon-font5 {
+        font-size: 22px;
+    }
+
+    .icon-font6 {
+        font-size: 20px;
+    }
+
+    .icon-font7 {
+        font-size: 15px;
+    }
+
+    .icon-font8 {
+        font-size: 13px;
+    }
+}
+
+@media (min-width : 1440px) and (max-width : 1680px) {
+
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 28px;
+        /*font-size: 14px;*/
+        padding: 3px 8px;
+    }
+
+    .ms-choice {
+        height: 28px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 34px;
+        /*font-size: 15px;*/
+        padding: 6px 12px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 28px;
+        padding: 0px 10px;
+    }
+
+    .Fbutton-fixed {
+        width: 77px;
+    }
+
+    h1, .font-1 {
+        font-size: 26px;
+    }
+
+    h2, .font-2 {
+        font-size: 24px;
+    }
+
+    h3, .font-3 {
+        font-size: 20px;
+    }
+
+    h4, .font-4 {
+        font-size: 18px;
+    }
+
+    h5, .font-5 {
+        font-size: 15px;
+    }
+
+    .font-6 {
+        font-size: 13px;
+    }
+
+    .font-7 {
+        font-size: 11px;
+    }
+
+    .icon-font1 {
+        font-size: 36px;
+    }
+
+    .icon-font2 {
+        font-size: 34px;
+    }
+
+    .icon-font3 {
+        font-size: 30px;
+    }
+
+    .icon-font4 {
+        font-size: 26px;
+    }
+
+    .icon-font5 {
+        font-size: 22px;
+    }
+
+    .icon-font6 {
+        font-size: 20px;
+    }
+
+    .icon-font7 {
+        font-size: 15px;
+    }
+
+    .icon-font8 {
+        font-size: 13px;
+    }
+}
+
+@media (min-width : 1680px) and (max-width : 1920px) {
+
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 28px;
+        /*font-size: 15px;*/
+        padding: 3px 8px;
+    }
+
+    .ms-choice {
+        height: 28px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 34px;
+        /*font-size: 15px;*/
+        padding: 6px 12px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 28px;
+        padding: 0px 10px;
+    }
+
+    .Fbutton-fixed {
+        width: 77px;
+    }
+
+    h1, .font-1 {
+        font-size: 28px;
+    }
+
+    h2, .font-2 {
+        font-size: 24px;
+    }
+
+    h3, .font-3 {
+        font-size: 22px;
+    }
+
+    h4, .font-4 {
+        font-size: 18px;
+    }
+
+    h5, .font-5 {
+        font-size: 15px;
+    }
+
+    .font-6 {
+        font-size: 13px;
+    }
+
+    .font-7 {
+        font-size: 11px;
+    }
+
+    .icon-font1 {
+        font-size: 36px;
+    }
+
+    .icon-font2 {
+        font-size: 34px;
+    }
+
+    .icon-font3 {
+        font-size: 30px;
+    }
+
+    .icon-font4 {
+        font-size: 26px;
+    }
+
+    .icon-font5 {
+        font-size: 22px;
+    }
+
+    .icon-font6 {
+        font-size: 20px;
+    }
+
+    .icon-font7 {
+        font-size: 15px;
+    }
+
+    .icon-font8 {
+        font-size: 13px;
+    }
+}
+
+@media (min-width : 1921px) {
+
+    .Ftxtbox, .Fselect, .Ftxtbox-M, .Fselect-M {
+        height: 30px;
+        /*font-size: 15px;*/
+        padding: 3px 8px;
+    }
+
+    .ms-choice {
+        height: 28px !important;
+    }
+
+    .Ftxtbox-lg, .Fselect-lg, .Fselect-lg-M, .Ftxtbox-lg-M {
+        height: 34px;
+        /*font-size: 15px;*/
+        padding: 6px 12px;
+    }
+
+    .Fbutton, .Fbutton-fixed {
+        height: 28px;
+        padding: 0px 10px;
+    }
+
+    .Fbutton-fixed {
+        width: 77px;
+    }
+
+    h1, .font-1 {
+        font-size: 28px;
+    }
+
+    h2, .font-2 {
+        font-size: 24px;
+    }
+
+    h3, .font-3 {
+        font-size: 22px;
+    }
+
+    h4, .font-4 {
+        font-size: 18px;
+    }
+
+    h5, .font-5 {
+        font-size: 15px;
+    }
+
+    .font-6 {
+        font-size: 13px;
+    }
+
+    .font-7 {
+        font-size: 10px;
+    }
+
+    .icon-font1 {
+        font-size: 36px;
+    }
+
+    .icon-font2 {
+        font-size: 34px;
+    }
+
+    .icon-font3 {
+        font-size: 30px;
+    }
+
+    .icon-font4 {
+        font-size: 26px;
+    }
+
+    .icon-font5 {
+        font-size: 22px;
+    }
+
+    .icon-font6 {
+        font-size: 20px;
+    }
+
+    .icon-font7 {
+        font-size: 15px;
+    }
+
+    .icon-font8 {
+        font-size: 13px;
+    }
+}
+
+
+/*For multiple select box*/
+
+.ms-drop ul li input[type=checkbox] {
+    margin: 0 4px 0 0 !important;
+}
+
+.ms-parent {
+    width: 100% !important;
+    padding: 0 !important;
+    border-radius: 1px !important;
+}
+
+.ms-choice {
+    border: 0 !important;
+    height: 28px !important;
+}
+
+.ms-drop ul li label {
+    overflow-x: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.Fcontrolbuttons span {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.ltr .Fradiobox label, .ltr .Fcheckbox label {
+    padding-left: 20px !important;
+}
+
+.rtl .Fradiobox label, .rtl .Fcheckbox label {
+    padding-right: 20px !important;
+}
+
+.ltr .Fchkbox, .ltr .Fchkbox-lg {
+    margin: 2px 0px 0px -20px !important;
+}
+
+.rtl .Fchkbox, .rtl .Fchkbox-lg {
+    margin: 2px -20px 0px 0px !important;
+}
+
+.ltr .Fradio, .ltr .Fradio-lg {
+    margin: 2px 0px 0px -20px !important;
+}
+
+.rtl .Fradio, .rtl .Fradio-lg {
+    margin: 2px -20px 0px 0px !important;
+}
+
+.theme2_background-color {
+    background-color: #4C4C4C !important;
+}
+
+
+/*Added by Danish*-------START*/
+
+.FDivColor {
+    background-color: #F2F2F2 !important;
+}
+
+.FInputFileColor {
+    background-color: #34c4f9  !important;
+    cursor: pointer !important;
+}
+
+.FIconColor:hover {
+    color: #34c4f9  !important;
+    cursor: pointer !important;
+}
+
+.FRowColor {
+   background-color:rgb(222, 245, 253) !important;
+}
+/*Added by Danish*-------END*/

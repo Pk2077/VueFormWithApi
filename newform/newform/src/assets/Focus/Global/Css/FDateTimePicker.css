@@ -1,0 +1,93 @@
+﻿
+    .add-on .input-group-btn > .btn {
+        border-left-width: 0;
+        left: -2px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    }
+    /* stop the glowing blue shadow */
+    .add-on .form-control:focus {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        border-color: #cccccc;
+    }
+
+    #divDate {
+        /*width: 30px;*/
+        height: 20px;
+        border: 1px solid black;
+    }
+
+
+    .buttion2 {
+        width: 30px;
+        height: 20px;
+        /*border: 2px solid #4CAF50;*/ /* Green */
+        border: none;
+        border-radius: 5px;
+    }
+
+    .dropdown1 {
+        width: 90px;
+        height: 25px;
+        /*border: 2px solid #4CAF50;*/ /* Green */
+        border: none;
+        border-radius: 5px;
+        margin-left: 30px;
+    }
+
+    .dropdown2 {
+        width: 60px;
+        height: 25px;
+        /*border: 2px solid #4CAF50;*/ /* Green */
+        border: none;
+        border-radius: 5px;
+    }
+
+    .button1 {
+        width: 32px;
+        height: 20px;
+        background-color: white;
+        color: black;
+        border: none;
+        /*border-radius: 10px;*/
+    }
+
+    #days {
+        display: table;
+        width: 100%;
+        /*margin-left: 5px;*/
+    }
+
+        #days div {
+            display: table-cell;
+            width: 13%;
+        }
+
+    #daterow {
+        display: table;
+        width: 100%;
+        height: 21px;
+        /*margin-left: 5px;*/
+    }
+
+        #daterow div {
+            display: table-cell;
+            width: 13%;
+        }
+
+    #selectMonthAndYear {
+        display: table;
+        width: 100%;
+        /*margin-left: 4px;*/
+        /*margin-top: 5px;*/
+    }
+
+        #selectMonthAndYear div {
+            display: table-cell;
+            width: 13%;
+        }
+        #dateTimePicker{
+            background-color:white;
+        }
+

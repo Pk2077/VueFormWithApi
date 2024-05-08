@@ -1,0 +1,92 @@
+﻿#divSMSCustomization{
+    width:820px !important;
+}
+#fieldtabDiv{
+    height:372px !important;
+    width:180px !important;
+    padding:0;
+}
+#divsmsTemplateOptCtrl{
+width: 74% !important;
+margin-left: -25px !important;
+margin-right: -25px !important;
+
+}
+#fieldtab> li.treeview{
+    white-space:nowrap;
+    padding:1px;
+}
+
+
+
+.rtl i.floatingicons{
+    float:right;
+    white-space:nowrap
+        
+}
+
+
+.ltr i.floatingicons{
+    float:left;
+}
+            .paddingDatePicker {
+                margin-left: 7px;
+            }
+
+            .rowmargins {
+                margin-top: 7px;
+                margin-bottom: -7px;
+            }
+            #roleTabs{
+                top:-5px
+            }
+            .paddingDPicker {
+                padding-left: 5px !important;
+            }
+
+            .ltr .datectrl_image {
+                margin-top: 1px !important;
+                margin-left: 7px !important;
+                margin-right: 5px !important;
+                font-size: 17px !important;
+                vertical-align: bottom !important;
+            }
+
+            .sriconfont {
+                font-size: 11px !important;
+                padding-top: 2px;
+                float: left;
+            }
+
+            .srbtrefresh {
+                border: 0px;
+                color: #8A878A;
+                float: left;
+            }
+
+            .SMSclsFieldset {
+              border: 1px solid silver;
+border-radius: 1px;
+margin: 0;
+ min-width: 182px;
+padding-left: 2px;
+margin-right: -3px;
+            }
+
+                .SMSclsFieldset > legend {
+                    width: auto;
+                    padding: 0 5px;
+                    font-size: 12px;
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                    /*margin-top: -10px;*/
+                    border-bottom: 0;
+                    border-radius: 3px;
+                }
+
+            @media screen and (max-width: 360px) {
+                .scrollbardown {
+                    margin-bottom: 15px;
+                }
+            }
+        

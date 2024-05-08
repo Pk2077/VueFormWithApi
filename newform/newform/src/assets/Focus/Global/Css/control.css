@@ -1,0 +1,118 @@
+﻿.popup-overlay {
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.66);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.popup-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+    .popup-close:hover {
+        color: blue;
+    }
+
+.popup-content {
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: auto;
+    min-width: 35%;
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+.Gtxtbox, .Gselect {
+    width: 100% !important;
+}
+
+@media(max-width : 480px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 20px;
+    }
+}
+
+@media (min-width : 480px) and (max-width : 640px) {
+
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 20px;       
+    }
+}
+
+@media (min-width : 640px) and (max-width : 768px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 20px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1024px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 20px;
+    }
+}
+
+@media (min-width : 1024px) and (max-width : 1136px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 23px;
+    }
+}
+
+@media (min-width : 1136px) and (max-width : 1280px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 23px;
+    }
+}
+
+@media (min-width : 1280px) and (max-width : 1366px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 23px;
+    }
+}
+
+@media (min-width : 1366px) and (max-width : 1440px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 26px;
+    }
+}
+
+@media (min-width : 1440px) and (max-width : 1680px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 26px;
+    }
+}
+
+@media (min-width : 1680px) and (max-width : 1920px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 26px;
+    }
+}
+
+@media (min-width : 1921px) {
+    .Gtxtbox, .Gselect, .FGridColumn {
+        height: 26px;
+    }
+}
+

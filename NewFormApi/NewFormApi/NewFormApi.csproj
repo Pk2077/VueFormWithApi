@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>30455dbc-79de-4ba1-a152-f4b0b255cd5b</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <ContainerRuntimeIdentifier>win-x64</ContainerRuntimeIdentifier>
+    <ContainerBaseImage>mcr.microsoft.com/dotnet/aspnet:8.0-nanoserver-1809</ContainerBaseImage>
+    <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\index-0_Hc92iY.js" />
+    <Content Remove="wwwroot\assets\index-ot0TNz6W.css" />
+    <Content Remove="wwwroot\assets\untitled-font-1-BCa_Tt6B.eot" />
+    <Content Remove="wwwroot\assets\untitled-font-1-Cqsn8gvK.ttf" />
+    <Content Remove="wwwroot\assets\untitled-font-1-DfRdvhdK.woff" />
+    <Content Remove="wwwroot\assets\untitled-font-1-DSKoIpxn.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ContainerEnvironmentVariable Include="ASPNETCORE_HTTPS_PORTS">
+      <Value>8081</Value>
+    </ContainerEnvironmentVariable>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\index-0_Hc92iY.js" />
+    <None Include="wwwroot\assets\index-ot0TNz6W.css" />
+    <None Include="wwwroot\assets\untitled-font-1-BCa_Tt6B.eot" />
+    <None Include="wwwroot\assets\untitled-font-1-Cqsn8gvK.ttf" />
+    <None Include="wwwroot\assets\untitled-font-1-DfRdvhdK.woff" />
+    <None Include="wwwroot\assets\untitled-font-1-DSKoIpxn.svg" />
+    <None Include="wwwroot\favicon.ico" />
+    <None Include="wwwroot\index.html" />
+  </ItemGroup>
+
+</Project>

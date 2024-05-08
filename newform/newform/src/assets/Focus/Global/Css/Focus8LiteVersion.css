@@ -1,0 +1,12 @@
+﻿.theme_background-color-inverse > a:hover {
+    background-color: white !important;
+    color: #4689cf !important;
+}
+
+.theme_background-color-inverse > a {
+    color: white !important;
+}
+
+.active > a{
+   color: #4689cf !important;
+}

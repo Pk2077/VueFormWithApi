@@ -1,0 +1,476 @@
+﻿/* written by narendhar reddy */
+
+.quickaccess {
+    list-style: none;
+}
+
+    .quickaccess .dropdown-menu {
+        padding: 25px 20px;
+    }
+
+        .quickaccess .dropdown-menu .nav-pills {
+            border-bottom: solid 1px #CAC8C8;
+        }
+
+            .quickaccess .dropdown-menu .nav-pills > li {
+                width: 1px;
+                display: table-cell;
+                float:none;
+            }
+
+                .quickaccess .dropdown-menu .nav-pills > li > a {
+                    padding: 9px 0px;
+                    text-align: center;
+                    display: block;
+                    color: #5E5E5E;
+                    background-color: transparent;
+                    white-space: nowrap;
+                }
+
+                .quickaccess .dropdown-menu .nav-pills > li.active > a {
+                    font-weight:700;
+                    padding: 9px 0px;
+                    margin: 0px 15px;
+                    text-align: center;
+                    display: block;
+                    color: #02B9FB;
+                    background-color: transparent;
+                    /*border-bottom: solid 3px #02B9FB;*/
+                    border-bottom: solid 3px #4689cf;
+                    border-radius: 0;
+                    white-space: nowrap;
+                }
+
+        .quickaccess .dropdown-menu a:hover {
+            color: #4689cf;
+            text-decoration: none;
+        }
+
+
+.quickaccess .dropdown-menu {
+        top: 50px;
+        width: 65%;
+        max-height: 500px;
+    }
+/*Favourites Tab*/
+#favourites.showMenu .favouritesMenu {
+    display: block;
+}
+
+#favourites.showMenu #shortcutUl {
+    width: 66.6%;
+    position: relative;
+    float: left;
+}
+
+    #favourites.showMenu #shortcutUl li:hover > i {
+        visibility: visible;
+        color: red;
+        cursor: pointer;
+    }
+
+.favouritesMenu {
+    display: none;
+    background-color: #E2E2E2;
+    padding: 10px 0px;
+    margin: 15px 7px 15px 0px;
+    height: 400px;
+    overflow: auto;
+    width: 32%;
+    float: left;
+}
+
+    .favouritesMenu > ul li.treeview:hover a, .favouritesMenu > ul li.active:hover a {
+        background-color: transparent;
+    }
+
+    .favouritesMenu > ul li.active > a, .favouritesMenu > ul li.treeview > a {
+        text-decoration: none;
+    }
+
+        .favouritesMenu > ul li.active > a i {
+            color: #02B9FB;
+        }
+
+    .favouritesMenu > ul li.treeview i.fa-dot-circle-o {
+        color: #02B9FB;
+    }
+
+    .favouritesMenu > ul li.treeview i.fa-circle, .favouritesMenu > ul li.active i.fa-circle {
+        font-size: 8px;
+    }
+
+.toggleMenu {
+    position: absolute;
+    top: 68px;
+    right: 10px;
+    font-size: 20px;
+    color: #02B9FB;
+    cursor: pointer;
+}
+
+#shortcut-body ul {
+    list-style: none;
+}
+#shortcut-body li{
+    margin:4px 0px;
+}
+
+#shortcutUl {
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+    #shortcutUl li {
+        margin: 5px 0px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding-left: 0px;
+    }
+
+        #shortcutUl li > i {
+            visibility: hidden;
+        }
+
+        #shortcut-body li > span, #shortcutUl li span {
+            padding: 3px;
+            cursor: pointer;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+            #shortcut-body li > span:hover, #dlteShrtcut-modal li > span:hover, #shortcutUl li:hover > span, #shortcut-body li.active > span {
+                color: #00B8F7;
+            }
+
+@media (max-width : 480px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 12px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 10px;
+    }*/
+
+    .quickaccess .dropdown-menu {
+        top: 49px !important;
+    }
+
+    .quickaccess .dropdown-menu {
+        padding: 10px 7px;
+    }
+
+        .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+            margin: 0px 2px;
+        }
+
+        .quickaccess .dropdown-menu .nav-pills > li {
+            display: inline-table !important;
+        }
+
+    #shortcutUl {
+        max-height: 350px;
+    }
+
+    .toggleMenu {
+        top: 50px;
+    }
+
+    .favouritesMenu {
+        padding: 2px 0px;
+        width:100%;
+        height:250px;
+    }
+     #shortcutUl ul{
+        border:0 !important;
+    }
+    #favourites.showMenu #shortcutUl   {
+        display:none;
+    }
+}
+
+@media(min-width : 480px) and (max-width : 639px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 12px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 10px;
+    }*/
+
+    .quickaccess .dropdown-menu {
+        top: 49px !important;
+    }
+
+    .quickaccess .dropdown-menu {
+        padding: 10px 7px;
+    }
+
+        .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+            margin: 0px 2px;
+        }
+
+        .quickaccess .dropdown-menu .nav-pills > li {
+            display: inline-table !important;
+        }
+
+    #shortcutUl {
+        max-height: 350px;
+    }
+     #shortcutUl ul{
+        border:0 !important;
+    }
+     #favourites.showMenu #shortcutUl   {
+       display:none
+    }
+
+    .toggleMenu {
+        top: 50px;
+    }
+
+    .favouritesMenu {
+        padding: 2px 0px;
+        width:100%;
+        height:250px;
+    }
+}
+
+@media(min-width : 640px) and (max-width : 767px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 13px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 11px;
+    }*/
+
+    .quickaccess .dropdown-menu {
+        top: 49px !important;
+    }
+
+    .quickaccess .dropdown-menu {
+        padding: 10px 7px;
+    }
+
+        .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+            margin: 0px 2px;
+        }
+
+        .quickaccess .dropdown-menu .nav-pills > li {
+            display: inline-table !important;
+        }
+
+    #shortcutUl {
+        max-height: 350px;
+    }
+
+    .toggleMenu {
+        top: 50px;
+    }
+
+    .favouritesMenu {
+        padding: 2px 0px;
+        width:100%;
+        height:250px;
+    }
+    #shortcutUl ul{
+        border:0 !important;
+    }
+     #favourites.showMenu #shortcutUl   {
+       display:none;
+    }
+
+}
+
+@media(min-width : 768px) and (max-width : 1023px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 14px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 12px;
+    }*/
+
+     .quickaccess .dropdown-menu {
+        top: 49px !important;
+    }
+
+    .quickaccess .dropdown-menu {
+        padding: 10px 7px;
+    }
+
+        .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+            margin: 0px 2px;
+        }
+
+        .quickaccess .dropdown-menu .nav-pills > li {
+            display: inline-table !important;
+        }
+
+    
+
+    .toggleMenu {
+        top: 50px;
+    }
+    #shortcutUl {
+        max-height: 350px;
+    
+    }
+   
+
+}
+.quickaccess .nav-pills li{
+    float:inherit !important;
+}
+
+@media(min-width : 1024px) and (max-width : 1135px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 14px;
+    }*/
+
+    /*#shortcutUl li, #shortcutUl li span {
+        font-size: 12px;
+    }
+    #shortcut-body li > a{
+       font-size: 11px;
+    }*/
+
+    .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+        margin: 0px 15px;
+    }
+
+    .toggleMenu {
+        top: 68px;
+    }
+}
+
+@media(min-width : 1136px) and (max-width : 1279px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 15px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 13px;
+    }
+     #shortcut-body li > a{
+       font-size: 11px;
+    }*/
+    .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+        margin: 0px 15px;
+    }
+
+    .toggleMenu {
+        top: 68px;
+    }
+}
+
+@media(min-width : 1280px) and (max-width : 1365px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 16px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 13px;
+    }
+      #shortcut-body li > a{
+       font-size: 11px;
+    }*/
+    .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+        margin: 0px 15px;
+    }
+
+    .toggleMenu {
+        top: 68px;
+    }
+}
+
+@media(min-width : 1366px) and (max-width : 1439px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 16px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 14px;
+    }
+      #shortcut-body li > a{
+       font-size: 12px;
+    }*/
+    .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+        margin: 0px 15px;
+    }
+
+    .toggleMenu {
+        top: 68px;
+    }
+}
+
+@media(min-width : 1440px) and (max-width : 1679px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 16px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 14px;
+    }
+      #shortcut-body li > a{
+       font-size: 12px;
+    }*/
+    .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+        margin: 0px 15px;
+    }
+
+    .toggleMenu {
+        top: 68px;
+    }
+}
+
+@media(min-width : 1680px) and (max-width : 1919px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 17px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 15px;
+    }
+       #shortcut-body li > a{
+       font-size: 13px;
+    }*/
+    .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+        margin: 0px 15px;
+    }
+
+    .toggleMenu {
+        top: 68px;
+    }
+}
+
+@media (min-width : 1920px) {
+    /*.quickaccess .dropdown-menu a {
+        font-size: 17px;
+    }
+
+    #shortcutUl li, #shortcut-body li > a, #shortcutUl li span {
+        font-size: 16px;
+    }
+     #shortcut-body li > a{
+       font-size: 14px;
+    }*/
+    .quickaccess .dropdown-menu .nav-pills > li > a, .quickaccess .dropdown-menu .nav-pills > li.active > a {
+        margin: 0px 15px;
+    }
+
+    .toggleMenu {
+        top: 68px;
+    }
+}
+.rtl #boutCompy{
+    border-left:dashed 1px gray !important;
+}
+.ltr #boutCompy{
+    border-right:dashed 1px gray !important;
+}

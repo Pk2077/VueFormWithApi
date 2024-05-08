@@ -1,0 +1,64 @@
+﻿/* written by narendhar reddy */
+
+#tabMenus .nav-tabs .active a {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+}
+
+#tabMenus .nav-tabs a:hover, #tabMenus .nav-tabs a:active, #tabMenus .nav-tabs a:focus {
+    text-decoration: none;
+    color: none;
+}
+
+
+
+#searchMax, #searchMin {
+    color: black;
+}
+#recentItems li span i.icon-arrowhead5,#recentItems li span i.icon-caret5 {
+    font-size:10px;
+}
+#recentItems .active >span,#recentItems span:hover{
+     /*color: #34C4F9;*/
+     cursor:pointer;
+}
+#quickMenus li span{
+    width:100%;
+    color:inherit;
+}
+#searchULinMin li,#searchULinMin li span,#quickMenus li,#quickMenus li span{
+     padding:5px;
+     text-decoration:none;
+     /*font-size:12px;*/
+}
+#searchULinMin li span:hover,#quickMenus li span:hover{
+     color: #34C4F9;
+     cursor:pointer;
+}
+#homeMenuRun li.treeview span{
+    white-space:pre;
+}
+
+.selected-shortcut {
+    background-color: #e5e2e2;
+}
+.horizontal-menu{
+    float:left;
+    background-color:white;
+}
+.horizontal-menu > li{
+    padding:5px;
+}
+.horizontal-menu > li>a{
+    color:black;
+}
+#loading{
+     position:absolute;top:42%;display:none;z-index:2000;
+}
+.ltr #loading{
+    left:42%;
+}
+.rtl #loading{
+    right:42%;
+}

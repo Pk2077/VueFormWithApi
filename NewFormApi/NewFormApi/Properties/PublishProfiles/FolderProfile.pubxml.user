@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\restDemoApi</_PublishTargetUrl>
+    <History>True|2024-05-06T12:07:51.1610469Z;True|2024-05-06T16:32:59.9157301+05:30;True|2024-05-06T16:19:21.1886718+05:30;True|2024-05-06T13:19:39.9904782+05:30;True|2024-05-06T12:12:14.2285949+05:30;False|2024-05-06T12:12:04.7741687+05:30;True|2024-05-06T12:10:19.3030080+05:30;False|2024-05-06T12:09:42.3297896+05:30;True|2024-05-06T12:07:58.9036253+05:30;True|2024-05-06T11:51:17.8918188+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

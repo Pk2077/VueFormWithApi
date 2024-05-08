@@ -1,0 +1,104 @@
+﻿.calendar_heading {
+    background-color: #C7DFFF;
+    border-bottom: 1px #6593CF solid;
+    font-family: Segoe UI,Tahoma;
+    font-size: 9pt;
+    font-weight: bold;
+}
+.calendar_yearmonth_select_panel {
+    height: 30px;
+    background-color: #E0F8F7;
+}
+
+.calendar_data_table {
+    table-layout: fixed;
+    width: 100%;
+    background-color: #ffffe0;
+    border-collapse: collapse;
+}
+
+.calendar_day_heading {
+    font-family: Segoe UI,Tahoma;
+    font-size: 9pt;
+    height: 20px;
+    width: 14%;
+    font-weight: bold;
+    border-bottom-style: dotted;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+.calendar_day_row {
+    /*height: 25px;*/
+}
+
+.calendar_day_text {
+    font-family: 'Arial';
+    font-size: 9pt;
+    font-weight: 600;
+    height: 20px;
+    width: 14%;
+}
+
+.dateinput::-ms-clear { /* hides ie input close[X] button */
+    display: none;
+}
+
+.datecontainer { /* Used to display only one date container */
+    background-color: white;
+}
+
+.ltr .datectrl_checkbox {
+    margin-left: 5px;
+}
+
+.rtl .datectrl_checkbox {
+    margin-right: 5px;
+    transform: rotate(0deg) scaleX(-1) !important;
+}
+
+.ltr .dateinput {
+    width:100%; 
+    padding-right: 20px; 
+    border: none; 
+    outline: none;
+}
+
+.rtl .dateinput {
+    width:100%; 
+    padding-left:20px; 
+    border: none; 
+    outline: none;
+}
+
+.ltr .datecontrol_clear_margin {
+    margin-left: -36px !important; 
+    margin-right:2px !important;
+}
+
+.rtl .datecontrol_clear_margin {
+    margin-left: 2px !important; 
+    margin-right:-36px !important;
+}
+
+.ltr .datecontrol_arrow_margin {
+    margin-left: -18px !important; 
+    margin-right: 2px !important;
+}
+
+.rtl .datecontrol_arrow_margin {
+    margin-left: 2px !important; 
+    margin-right: -18px !important;
+}
+
+.ltr .datecontrol_arrow {
+    margin-top:1px; 
+    font-size: 15px; 
+    vertical-align: bottom;
+}
+
+.rtl .datecontrol_arrow {
+    margin-top:1px; 
+    font-size: 15px; 
+    vertical-align: bottom;
+}

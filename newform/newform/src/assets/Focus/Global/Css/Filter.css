@@ -1,0 +1,64 @@
+﻿.defaultFilterBody label {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.filterTree,.filterDataTree, .dateRangeTree {
+    position:fixed;
+    top:auto;
+    left:auto !important;
+    right:auto !important;
+    resize:both;
+}
+
+    .filterTree li,.filterDataTree li, .dateRangeTree li {
+        list-style: none;
+    }
+
+    .filterTree ul,.filterDataTree ul, #dateRangeTree ul {
+        margin-bottom: 0;
+    }
+
+    .filterTree li a, .filterTree a,.filterDataTree li a, .filterDataTree a, .dateRangeTree li a, .dateRangeTree a, #dateRangeTree li {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+        .filterTree li a span,.filterDataTree li a span, .dateRangeTree li span {
+            font-size: 10px;
+        }
+
+#DefaultValuesNunberList li {
+    list-style: none;
+    padding: 2px 5px;
+}
+
+.AdvanceFilter > div > div > div {
+    position: relative;
+    min-height: 1px;
+    padding: 0 3px;
+}
+
+/*.ltr .AdvanceFilter .dropdown .filterTree {
+    left: 0;
+    right: auto;
+}
+
+.rtl .AdvanceFilter .dropdown .filterTree {
+    left: auto;
+    right: 0;
+}*/
+
+@media (min-width : 768px) and (max-width : 1919px) {
+    .FilterFieldCustomizePopup {
+        width: 300px;
+    }
+}
+
+@media (min-width : 1480px) and (max-width : 1919px) {
+    .FilterFieldCustomizePopup {
+        width: 350px;
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "xZ6GywuIxBAyTr77bq7+eYYE2SVzj4WMqEX+8wEuTgk=",
+  "Source": "NewFormApi",
+  "BasePath": "_content/NewFormApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "NewFormApi\\wwwroot",
+      "Source": "NewFormApi",
+      "ContentRoot": "E:\\New form\\NewFormApi\\NewFormApi\\wwwroot\\",
+      "BasePath": "_content/NewFormApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\New form\\NewFormApi\\NewFormApi\\wwwroot\\favicon.ico",
+      "SourceId": "NewFormApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\New form\\NewFormApi\\NewFormApi\\wwwroot\\",
+      "BasePath": "_content/NewFormApi",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\New form\\NewFormApi\\NewFormApi\\wwwroot\\index.html",
+      "SourceId": "NewFormApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\New form\\NewFormApi\\NewFormApi\\wwwroot\\",
+      "BasePath": "_content/NewFormApi",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

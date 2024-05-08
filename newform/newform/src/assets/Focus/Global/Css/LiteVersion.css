@@ -1,0 +1,44 @@
+﻿.theme_background-color, .theme_background-color:hover {
+    background-color: #4689cf !important;
+}
+
+.theme_icon-color:hover {
+    color: #4689cf !important;
+    cursor: pointer !important;
+}
+
+.theme_color, .theme_color:hover {
+    color: white !important;
+}
+
+.theme_color-inverse, .theme_color-inverse:hover {
+    color: #4689cf !important;
+}
+
+.theme_button_color:hover {
+    color: #4689cf !important;
+}
+
+.theme_row_color:hover {
+    color: #4689cf !important;
+}
+
+.Fbutton-fixed:hover, .Fbutton-fixed:active, .Fbutton:hover, .Fbutton:hover:active, .Fbutton:focus, Fbutton-fixed:focus {
+    background-color: #4689cf !important;
+}
+
+.navText {
+    font-weight: 500;
+    margin: 10px 3px;
+}
+
+.navText > span:first-child {
+    color: #747474;
+    cursor: default;
+}
+
+.navText > span:nth-child(2) {
+    color: #4689cf;
+    font-weight: 900;
+    cursor: default;
+}
